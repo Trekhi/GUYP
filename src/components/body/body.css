@@ -6,7 +6,7 @@
 }
 
 .body{
-    background: url(D:\SEMESTRE-6\Aplicaciones-Web\Web\aplicacion-web\src\img\pexels-sohi-807598.jpg) no-repeat center center fixed;
+    background: url(../img/pexels-sohi-807598.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
