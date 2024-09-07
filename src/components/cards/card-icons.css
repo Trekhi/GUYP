@@ -1,0 +1,50 @@
+:root{
+
+    --color-green:#658C5A;
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --size-letter:0px;
+    --size-title:0px;
+
+
+}
+
+
+.card{
+
+    display: grid;
+    padding: 20px;
+    align-items:center;
+    justify-items: center;
+    color: var(--color-black);
+    transition: color 0.2s ease; /* Transición de color */
+    border-radius: 5px;
+    min-width: 300px; /* Ancho mínimo de 200px */
+    min-height: 295px; /* Alto mínimo de 100px */
+    text-align:center;
+
+}
+
+
+.card:hover{
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
+.icon{
+    font-size: 100px;
+}
+
+/*Carusel*/
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .carousel-card {
+    
+    margin-right: 16px;
+    scroll-snap-align: start;
+  }
