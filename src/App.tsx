@@ -1,7 +1,7 @@
 import './App.css'
 import Navi from './components/header/Navi'
 import Body from './components/body/Body'
-import CaruselCard from './components/cards/card-icons'
+import CaruselCard from './components/cards/Card-icons'
 
 function App() {
   

@@ -67,8 +67,8 @@
 
 /* Estilos para los enlaces */
 a {
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    color: #000000; /* Color del texto */
+    text-decoration: none !important; /* Elimina el subrayado por defecto */
+    color: #000000 !important; /* Color del texto */
     font-size: 16px;
     position: relative;
     padding-bottom: 5px;
