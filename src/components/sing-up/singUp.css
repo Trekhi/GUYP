@@ -1,0 +1,54 @@
+/* signup.css */
+body {
+    background-color: #ebd9d9; /* Color de fondo para toda la página */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gradient-form {
+    background: #F2F2F2; /* Color de fondo para la sección */
+  }
+  
+  .card {
+    background: white; /* Fondo blanco para la tarjeta */
+  }
+  
+  .btn-custom {
+    font-size: 15px;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    color: white;
+    background: #658C5A; /* Color verde */
+    border: 3px solid #658C5A; /* Borde verde */
+  }
+  
+  .btn-custom:hover {
+    color: #658C5A; /* Color verde */
+    background: #e0f0e0; /* Verde claro al hacer hover */
+    border: 3px solid #658C5A; /* Borde verde */
+    transition: 0.5s;
+  }
+  
+  .card-body {
+    padding: 4rem;
+  }
+  
+  @media (max-width: 767px) {
+    .card-body {
+      padding: 3rem;
+    }
+    .text-center img {
+      width: 120px;
+    }
+    .btn-custom {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .card-body {
+      padding: 4rem;
+    }
+  }
+  
