@@ -1,27 +1,26 @@
-:root{
+:root {
     --color-black: #000000;
     --padding-large: 50px;
     --color-white: #ffffff;
-
 }
 
-.body{
+.body {
     background: url(../img/pexels-sohi-807598.jpg) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     color: var(--color-white);
     padding: var(--padding-large);
-    height:400px;
-    justify-content:space-around;
-
+    height: 600px;
+    justify-content: space-around;
 }
 
-h1{
+h1 {
     font-weight: 600;
+    font-size: 36px; /* Ajusta el tamaño del texto */
 }
 
-.text{
+.text {
     font-size: 18px;
 }
 
@@ -44,4 +43,47 @@ button:hover {
     background-color: #fff; 
     color: #000; 
     border: 2px solid #fff; 
+}
+
+
+@media (max-width: 768px) {
+    .body {
+        gap: 20px;
+        height: auto; /* Ajusta la altura para que sea flexible */
+    }
+
+    h1 {
+        font-size: 28px; /* Reduce el tamaño del título */
+    }
+
+    .text {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+
+    button {
+        padding: 8px 16px; /* Reduce el tamaño del botón */
+        font-size: 14px; /* Ajusta el tamaño del texto del botón */
+    }
+}
+
+/* Ajustes para móviles (máximo 480px de ancho) */
+@media (max-width: 480px) {
+    .body {
+     /* Reduce aún más el padding en móviles */
+        flex-direction: column; /* Mantén la dirección en columna */
+        justify-content: center; /* Centra el contenido verticalmente */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce aún más el tamaño del título */
+    }
+
+    .text {
+        font-size: 14px; /* Ajusta el tamaño del texto para móviles */
+    }
+
+    button {
+        padding: 6px 12px; /* Botón más pequeño en móviles */
+        font-size: 12px; /* Texto más pequeño en el botón */
+    }
 }

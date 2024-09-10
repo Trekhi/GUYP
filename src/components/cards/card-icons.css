@@ -1,50 +1,81 @@
-:root{
-
-    --color-green:#658C5A;
-    --color-black:#000000;
-    --color-white:#ffffff;
-    --size-letter:0px;
-    --size-title:0px;
-
-
-}
-
-
-.card{
-
-    display: grid;
-    padding: 20px;
-    align-items:center;
-    justify-items: center;
-    color: var(--color-black);
-    transition: color 0.2s ease; /* Transición de color */
-    border-radius: 5px;
-    min-width: 300px; /* Ancho mínimo de 200px */
-    min-height: 295px; /* Alto mínimo de 100px */
-    text-align:center;
-
-}
-
-
-.card:hover{
-    background: var(--color-green);
-    color: var(--color-white);
-}
-
-.icon{
-    font-size: 100px;
-}
-
-/*Carusel*/
-.carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+:root {
+    --color-green: #658c5a;
+    --color-black: #000000;
+    --color-white: #ffffff;
   }
   
-  .carousel-card {
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los botones y los ítems del carrusel */
+    position: relative;
+    margin: auto;
     
-    margin-right: 16px;
-    scroll-snap-align: start;
   }
+  
+  .carousel-items {
+
+    width: 100%;
+    overflow: hidden; /* Ocultar las tarjetas que no están activas */
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; /* Cada tarjeta ocupa el 100% del espacio disponible */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+    display: block;
+  }
+  
+  .card {
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    color: var(--color-black);
+    background-color: #fff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 295px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+  
+  .icon {
+    font-size: 100px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 50px; /* Aumentar el tamaño del ícono */
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Centrar los botones verticalmente */
+   
+  }
+  
+  .carousel-control-prev {
+    left: -40px; /* Posicionar a la izquierda */
+  }
+  
+  .carousel-control-next {
+    right: -40px; /* Posicionar a la derecha */
+  }
+
+  
+  
