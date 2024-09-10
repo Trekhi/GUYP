@@ -1,7 +1,8 @@
 // Navi.tsx
 import './navbar.css';
 import { Font } from '../Font';  // Importa tu componente Font
-import { faHome, faLeaf, faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'; // Importa los íconos necesarios
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'; // Importa los íconos necesarios
+import { faFacebook, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function Navi() {
 
@@ -9,9 +10,9 @@ function Navi() {
         <div>
             <nav className='icons'>
                 <div className="start">
-                    <Font css="iconos" icon={faCog} /> {/* Icono de configuración */}
-                    <Font css="iconos" icon={faLeaf} /> {/* Icono de hoja */}
-                    <Font css="iconos" icon={faHome} /> {/* Icono de casa */}
+                <a href="#"><Font css="iconos" icon={faFacebook} ></Font></a>
+                <a href="#"><Font css="iconos" icon={faLinkedin} ></Font> </a>
+                <a href="#"><Font css="iconos" icon={faWhatsapp} ></Font> </a>
                 </div>
                 <div className="end">
                 <Font css="iconos" icon={faSignOutAlt} /> {/* Icono de salida */}
@@ -19,7 +20,7 @@ function Navi() {
             </nav>
             <nav className='menu'>  
                 <div className="slogan">
-                    <h1>GUYP</h1>
+                    <h2>GUYP</h2>
                 </div>
                 <div className="buttons">
                     <a href="">Inicio</a>

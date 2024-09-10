@@ -14,7 +14,7 @@
 /* Estilos de íconos */
 .iconos {
     font-size: var(--icon-size);
-    margin-right: var(--gap-small);
+    padding: 5px;
     color: var(--color-black);
 }
 
@@ -107,7 +107,7 @@ a:hover::after {
     }
 
     /* Centra los íconos y ajusta los márgenes */
-    .icons {
+    .iconosFooter {
         
         padding: var(--padding-medium);
     }
