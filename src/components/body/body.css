@@ -82,6 +82,7 @@ button:hover {
 
     .text {
         font-size: 14px; /* Ajusta el tamaño del texto para móviles */
+        width: auto;
     }
 
     button {

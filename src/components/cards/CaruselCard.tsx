@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./card-icons.css"; // Estilos
 import { CardIcons } from "./Card-icons"; // Componente de la tarjeta
 import { faHome, faLeaf, faCog } from "@fortawesome/free-solid-svg-icons"; // Iconos

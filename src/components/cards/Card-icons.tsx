@@ -14,8 +14,8 @@ export function CardIcons(Props: InfoCard) {
   const { icon, title, text } = Props;
 
   return (
+    
     <div className="card">
-      <h3>Servicios</h3>
       <Font css="icon" icon={icon} />
 
       <h3>{title ? title : "Consejos de Cuidados"}</h3>

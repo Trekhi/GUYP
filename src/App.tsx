@@ -1,7 +1,7 @@
 import './App.css'
 import Navi from './components/header/Navi'
 import Body from './components/body/Body'
-import CaruselCard from './components/cards/CaruselCard'
+import AutoPlay from './components/AutoPlay/AutoPlay'
 import Nosotros from './components/nosotros/Nosotros'
 import Temporadas from './components/temporadas/Temporadas'
 import Footer from './components/footer/Footer'
@@ -12,7 +12,7 @@ function App() {
     <>
       <Navi/>
       <Body/>
-      <CaruselCard/>
+      <AutoPlay/>
       <Nosotros/>
       <Temporadas/>
       <Footer/>

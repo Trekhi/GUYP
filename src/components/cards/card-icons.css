@@ -33,18 +33,18 @@
   
   .card {
     display: grid;
-    padding: 20px;
+    
     gap: 20px;
     align-items: center;
     justify-items: center;
-    color: var(--color-black);
-    background-color: #fff;
+    padding:20px;
+    
     transition: background-color 0.2s ease, color 0.2s ease;
-    border-radius: 5px;
+    border-radius: 0px !important;
     min-width: 300px;
     min-height: 295px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: none !important;
   }
   
   .card:hover {
