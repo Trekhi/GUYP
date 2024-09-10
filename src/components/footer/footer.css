@@ -1,0 +1,60 @@
+footer{
+    background-color: #3D5939;
+    color:white;
+    padding: 50px;
+    line-height: 2;
+    margin: 0 auto;
+}
+
+
+
+.box h3{
+    font-weight:300;
+    font-size: 24px;
+}
+
+.box p{
+    font-weight:200;
+}
+
+.box a{
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: lighter !important;
+}
+
+.box ul{
+    list-style: none;
+    padding: 0 ;
+}
+
+
+.iconosFooter{
+    padding-right: 15px;
+}
+
+
+.btn-outline-secondary .iconoSearch {
+    color: #ffffff; 
+}
+
+
+
+.btn-outline-secondary:hover {
+    background-color: #7f7d15 !important; /* Cambia este valor al color que prefieras para el icono en hover */
+}
+
+
+
+
+@media (max-width:769px){
+    .box{
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width:769px) and (max-width:998px){
+    .box{
+        margin-bottom: 50px;
+    }
+}

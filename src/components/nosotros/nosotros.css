@@ -1,0 +1,64 @@
+.containerd{
+    padding: 50px;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem);
+    margin-right: auto;
+
+}
+
+/*
+.triangle-wrapper{
+    background-color:#658C5A;
+    clip-path: polygon(100% 0, 0 0, 51% 66%);
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+    display: flex; contenedor flexible que permite que sus elementos hijos se adapten al espacio disponible de manera eficiente.
+    justify-content: center;
+    position: relative; Un elemento con position: relative se posiciona en relación con su lugar original en el flujo del documento. Es decir, el elemento sigue ocupando el mismo espacio en el diseño, pero puedes moverlo usando las propiedades top, right, bottom, y left.
+    margin: 0 auto;
+}
+
+
+.circle-img {
+    position: absolute; Un elemento con position: absolute se posiciona en relación con el contenedor más cercano que tenga position: relative (o position: absolute, position: fixed). Si no hay tal contenedor, se posicionará en relación con el documento (la página web en sí)., en este caso si hay contenedor osea el triangulo
+    top: 14px; 7px desde la parte superior del contenedor
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; de rectangulo de borde de la imagen a circulo
+    object-fit: cover; hace que la imagen tenga una proporcion adecuada para el contenedor, si la imagen es mas ancha o larga, pues se ajusta para que quepa bien en el contenedor
+    border: 5px solid rgb(0, 0, 0); /* Borde para el círculo 
+}
+
+*/
+
+.circle-img{
+    width: 100%;
+}
+
+
+.first h1{
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .containerd {
+        padding-left: 1.5rem; 
+        padding-right: 1.5rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .containerd {
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .containerd {
+        padding-left: 0.5rem; 
+        padding-right: 0.5rem; 
+    }
+}

@@ -1,0 +1,128 @@
+/*
+-nav: barra navegación; 
+-nav-pills: convierte enlaces o botones en pestañas con un diseño redondeado
+-mb-3 : da un margin bootom de 3
+-active: Esta clase indica que la pestaña "Home" está seleccionada inicialmente (por defecto).
+-data-bs-toggle="pill": Indica que el botón controla el cambio de pestañas (parte del comportamiento de Bootstrap).
+-data-bs-target="#pills-home": Identifica cuál es el contenido que debe mostrarse al hacer clic en la pestaña. En este caso, enlaza al contenido con el id="pills-home".
+-aria-selected="true": Este atributo indica si la pestaña está actualmente seleccionada. Cuando está en "true", significa que la pestaña está activa y muestra el contenido asociado. En una lista de pestañas, solo una pestaña debe tener aria-selected="true" en un momento dado para reflejar el estado activo.
+-role='tab' : ayuda a que todas las tecnologias que soporten esta pagina sepan que este elemento es parte de un grupo de pestañas que esta diseñado para cambiar el contenido mostrado en una region asociada
+-aria-controls establece una relación entre el elemento de la pestaña y el contenido que controla o muestra.
+
+
+-tab-pane: Define que este div es una sección de contenido para una pestaña.
+-fade: Aplica una transición de desvanecimiento al cambiar entre pestañas.
+-show: Hace que el contenido sea visible.
+-active: Marca esta pestaña como la activa, lo que significa que su contenido debe ser mostrado cuando se carga la página o cuando la pestaña está seleccionada.
+-role="tabpanel": Indica que este elemento es un panel de contenido para una pestaña, lo cual ayuda a las tecnologías asistivas a identificar la función del elemento.
+-aria-labelledby="pills-home-tab": Establece una relación entre este contenido y la pestaña correspondiente con id="pills-home-tab".
+*/
+
+
+.tempContainer{
+    background-color: #F2F2F2;
+    padding: 40px 120px;
+}
+
+.nav-pills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.entrada{
+    text-align: center;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+.containerimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+    gap:20px;/* Espaciado entre las imágenes */
+}
+
+.itemimg {
+    text-align: center;
+}
+
+.itemimg img {
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 15px 15px;
+}
+
+.itemimg img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    margin: 8px 0px;
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+}
+
+.parrafoTemp{
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+}
+
+
+
+.nav-pills .nav-link.botoncito {
+    color:black;
+}
+
+
+/* Estilo para el botón activo */
+.nav-pills .nav-link.active.botoncito {
+    background-color: #658C5A; /* Color de fondo para el botón activo */
+    color: white; /* Color del texto del botón activo */
+}
+
+/* Estilo para el botón al pasar el ratón sobre él */
+.botoncito:hover {
+    background-color: #658C5A; /* Color de fondo al pasar el ratón */
+    color: white !important; /* Color del texto al pasar el ratón */
+}
+
+
+@media (max-width: 768px) {
+  .tempContainer {
+      padding: 20px 15px;
+  }
+
+  .itemimg img {
+      max-width: 100%;
+  }
+
+  .description, .parrafoTemp {
+      font-size: 16px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-pills {
+      flex-direction: column; /* Los botones se apilarán verticalmente en pantallas muy pequeñas */
+      align-items: center;
+  }
+
+  .botoncito {
+      margin-bottom: 10px; /* Añade espacio entre los botones en pantallas pequeñas */
+  }
+}
