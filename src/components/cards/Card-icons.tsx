@@ -1,26 +1,24 @@
 import "./card-icons.css";
 import { Font } from "../Font"; //Componenetes Icons
-import {
-  faHome,
-  faLeaf,
-  faCog,
-  faSignOutAlt,
-} from "@fortawesome/free-solid-svg-icons"; //Nombre de los iconos
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 //Props Argumentos para la función
 
 interface InfoCard {
+  icon: IconProp;
+  title?: string;
   text?: string;
 }
 
 export function CardIcons(Props: InfoCard) {
-  const { text } = Props;
+  const { icon, title, text } = Props;
 
   return (
     <div className="card">
-      <Font css="icon" icon={faLeaf} />
+      <h3>Servicios</h3>
+      <Font css="icon" icon={icon} />
 
-      <h3>Consejos de Cuidados</h3>
+      <h3>{title ? title : "Consejos de Cuidados"}</h3>
       <p>
         {text
           ? text
@@ -30,30 +28,5 @@ export function CardIcons(Props: InfoCard) {
   );
 }
 
-function CaruselCard() {
-  return (
-    <div className="carousel">
-      <div className="carousel-card">
-        <CardIcons/>
-      </div>
-      <div className="carousel-card">
-        <CardIcons text="Segundo consejo" />
-      </div>
-      <div className="carousel-card">
-        <CardIcons />
-      </div>
-      <div className="carousel-card">
-        <CardIcons />
-      </div>
-      <div className="carousel-card">
-        <CardIcons />
-      </div>
-      <div className="carousel-card">
-        <CardIcons />
-      </div>
-    </div>
-  );
-}
 
-
-export default CaruselCard;
+export default CardIcons;

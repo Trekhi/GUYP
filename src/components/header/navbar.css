@@ -96,3 +96,53 @@ a::after {
 a:hover::after {
     transform: scaleX(1); /* Hace visible la línea al pasar el mouse */
 }
+
+@media (max-width: 768px) {
+    /* Reduce el padding en el menú */
+    .menu {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto; 
+        flex-direction:initial;
+    }
+
+    /* Centra los íconos y ajusta los márgenes */
+    .icons {
+        
+        padding: var(--padding-medium);
+    }
+
+
+    /* Ajusta los márgenes y tamaño de íconos */
+    .start, .end {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Cambia el tamaño del texto en enlaces */
+    a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    
+    .iconos {
+        font-size: 20px; /* Tamaño reducido de íconos */
+    }
+
+    /* Cambia el tamaño del texto en enlaces */
+    a {
+        font-size: 12px;
+    }
+
+    
+    .buttons {
+        gap: var(--gap-small);
+    }
+}
