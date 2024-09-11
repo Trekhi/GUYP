@@ -8,16 +8,18 @@ import Slider from "react-slick";
 
 function AutoPlay() {
   var settings = {
+    arrows: false,
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
+          arrows: false,
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
@@ -25,6 +27,7 @@ function AutoPlay() {
         }
       },
       {
+        arrows: false,
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -33,6 +36,7 @@ function AutoPlay() {
         }
       },
       {
+        arrows: false,
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
