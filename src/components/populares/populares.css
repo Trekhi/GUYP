@@ -1,0 +1,79 @@
+.popcontainer{
+    padding: 50px;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 3rem);
+    padding-left: var(--bs-gutter-x, 3rem);
+    margin-right: auto;
+    background-color: #F2F2F2;
+}
+
+
+
+.popcontainer h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.popcontainer p{
+    text-align: center;
+}
+
+.itempop img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.itempop .doble{
+    padding-bottom: 62px;
+}
+
+
+
+.containerimgPop {
+    position: relative;
+    width: 90%;
+    margin: 20px;
+}
+
+
+.texto {
+    position: absolute;
+    bottom: 0; /*para que se encuentre abajo el texto*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /*para que no se vea mientras no paso por encima el raton*/
+    transition: opacity 0.5s ease-in-out;  /*transicipon opasidad por 0.5 segundos */
+    font-size: 16px;
+}
+
+.containerimgPop:hover .texto {
+    opacity: 1;
+}
+
+
+
+@media (max-width: 1200px) {
+    .itempop {
+        max-width: 58%; /* Ajusta a dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .itempop {
+        max-width: 100%; 
+    }
+
+    .containerimgPop {
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .itempop {
+        max-width: 100%;
+    }
+}

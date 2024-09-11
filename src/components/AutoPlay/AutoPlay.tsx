@@ -7,7 +7,7 @@ import { faHome, faLeaf, faCog, faAtom } from "@fortawesome/free-solid-svg-icons
 import Slider from "react-slick";
 
 function AutoPlay() {
-  var settings = {
+  const settings = {
     arrows: false,
     dots: true,
     infinite: false,
