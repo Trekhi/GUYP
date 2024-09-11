@@ -10,10 +10,10 @@ function AutoPlay() {
   const settings = {
     arrows: false,
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
@@ -46,7 +46,7 @@ function AutoPlay() {
     ]
   };
   return (
-    <div style={{marginTop:'10px'}} className="slider-container">
+    <div style={{margin:'70px'}} className="slider-container">
       <Slider {...settings}>
         <div>
           <CardIcons icon={faCog}/>

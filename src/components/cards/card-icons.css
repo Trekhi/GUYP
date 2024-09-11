@@ -33,14 +33,14 @@
   
   .card {
     display: grid;
-    
+    margin: 15px;
     gap: 20px;
     align-items: center;
     justify-items: center;
-    padding:20px;
+    padding:35px;
     
     transition: background-color 0.2s ease, color 0.2s ease;
-    border-radius: 0px !important;
+    border-radius: 20px !important;
     min-width: 300px;
     min-height: 295px;
     text-align: center;
